@@ -64,6 +64,11 @@ async function openScan(){
 }
 
 $('permBtn').addEventListener('click', askCamera);
+// The cross: stop scanning and go back to the first Scan to Explore screen.
+$('closeBtn').addEventListener('click', () => {
+  stopScan(); phase = 'perm'; overlay('guide', false);
+  $('permStatus').textContent = ''; show('perm');
+});
 
 openPerm();
 window.__hub = { openExplorable, EXPLORABLES };
