@@ -39,13 +39,3 @@ p{margin:6px 0 16px;line-height:1.5}
 .found b{display:block;font-size:20px;color:var(--strong)}
 @keyframes pop{from{transform:scale(.7);opacity:0}to{transform:scale(1);opacity:1}}
 .choose{display:grid;gap:8px;margin-bottom:12px}
-/* bigger, plainer text: nothing small */
-h1{font-size:30px}
-p{font-size:20px}
-.btn{font-size:20px;padding:18px 20px}
-.status{font-size:18px}
-.scan-top{align-items:center;text-align:center}
-.scan-top b{font-size:22px}
-.found b{font-size:34px}
-.found span{display:block;margin-top:6px;font-size:20px;color:var(--muted)}
-.found .plate{padding:28px 36px}
