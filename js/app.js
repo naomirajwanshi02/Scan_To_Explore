@@ -70,5 +70,8 @@ $('closeBtn').addEventListener('click', () => {
   $('permStatus').textContent = ''; show('perm');
 });
 
-openPerm();
+// ?scan=1 (the cross in a project such as Pagoda): open straight on the scanning screen; the
+// browser asks for the camera there if it needs to, instead of showing the first screen again.
+if (q.has('scan')) openScan();
+else openPerm();
 window.__hub = { openExplorable, EXPLORABLES };
